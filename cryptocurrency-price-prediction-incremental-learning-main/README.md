@@ -1,4 +1,4 @@
-# Cryptocurrency (AVAX) price prediction with Incremental/Online Learning
+# Cryptocurrency (AVAX) price prediction with Incremental/Online Learning (River)
 
 Goal 1 : Prediction the daily Close price of AVAX using BTC and ETH data <br>
 Goal 2 : In addition time series data and prediction the daily Close price of AVAX using BTC and ETH data
