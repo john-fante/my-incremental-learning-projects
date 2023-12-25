@@ -13,9 +13,8 @@ I have used the following methods.
 
 ## Results
 
-![avax_without_time_data](https://github.com/john-fante/cryptocurrency-price-prediction-incremental-learning/assets/50263592/1978f13d-d701-4d07-bbef-557d8f911b01)
-![avax_with_time_data](https://github.com/john-fante/cryptocurrency-price-prediction-incremental-learning/assets/50263592/d4957574-1d00-4682-8d94-e51a6e2a36aa)
 
+![Unknown-5](https://github.com/john-fante/my-incremental-learning-projects/assets/50263592/828da9af-d419-4ab4-9258-add27f8dce95)
 
 
 ## References
