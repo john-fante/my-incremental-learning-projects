@@ -11,6 +11,7 @@ In this method, our model learns from one sample of each training loop. Actually
 
 
 
+
 * I used **River** library for online/incremental learning[2], 
 * I used a mirrored strategy (using 2 T4 GPU at the same time),
 * I used a customized ViT model [3],
@@ -18,11 +19,6 @@ In this method, our model learns from one sample of each training loop. Actually
 * I used a Linear Regression model for classification (from River),
 
 
-## My Another Projects
-* [Mammals Classification w/Ensemble Deep Learning](https://www.kaggle.com/code/banddaniel/mammals-classification-w-ensemble-deep-learning)
-* [Bladder Tissue Classification w/ViT (F1 Scr: 0.82)](https://www.kaggle.com/code/banddaniel/bladder-tissue-classification-w-vit-f1-scr-0-82)
-* [Segment Medical Instrument, w/Custom DeepLabv3+(Dice: 0.86)](https://www.kaggle.com/code/banddaniel/segment-medical-instrument-deeplabv3-dice-0-86)
-* [Jellyfish Detect (10CV Custom ConvMixer) (F1:0.87)](https://www.kaggle.com/code/banddaniel/jellyfish-detect-10cv-custom-convmixer-f1-0-87)
 
 
 ## References
