@@ -1,16 +1,27 @@
-## Normal heartbeat/Myocardial Infarction Classification
+## Tesla Stock Price Prediction w/Online Learning
 
-Basic ECG time series classification with Keras (Normal heartbeat vs Myocardial Infarction) <br>
-Data source -> https://www.timeseriesclassification.com/description.php?Dataset=ECG200 <br>
-Reference -> https://dl.acm.org/doi/book/10.5555/935627 <br>
+(kaggle link -> https://www.kaggle.com/code/banddaniel/tesla-stock-price-prediction-w-online-learning)
 
-<img style="width:75%;" src='https://github.com/john-fante/normal_heartbeat_vs_myocardial_infarction_classification/assets/50263592/32a8a301-c2db-47e3-956d-7edb2170ad65' alt="@github/john-fante ecg classification" >
+<i><span style="color:#e74c3c;"> Main Goal: </span> Predict <b>the close price</b> of a Tesla stock price using the Online Learning method with a Linear Regression model.</i>
 
-## Result
-<li> Sparse Categorical Accuracy: 83 % </li>
-<li> ROC AUC Score : 0.842 </li>
-<br>
+First of all, I am very keen on trying new methods. This is why I tried an Online/Incremental Learning [1] method in this project for time series forecasting. 
+In this method, our model learns from one sample of each training loop. Actually, this type of learning is very handy in the streaming data.
 
-<img style="width:40%;" src="https://github.com/john-fante/normal_heartbeat_vs_myocardial_infarction_classification/assets/50263592/828fa795-29ef-4b47-8a3b-42d2d7879170" >
-<br>
-<i>Confusion Matrix</i>
+
+* I used **River** library for online/incremental learning [2],
+* I created cyclical features at the feature engineering stage (1 row = 1 day, 5 rows = 1 week, 20 rows = 1 month),
+* I have considered 5 rows of data as one week for cyclical features (stock price data is available only weekdays).
+* I used a Linear Regression model for time series forecasting (from River),
+
+
+
+## Proposed Pipeline
+
+<img width="1212" alt="Screenshot 2024-03-13 at 12 49 07 AM" src="https://github.com/john-fante/my-incremental-learning-projects/assets/50263592/ea75303d-ac1d-4db0-9a25-18409164e7be">
+
+
+
+
+## References
+1. https://en.wikipedia.org/wiki/Incremental_learning
+2. https://riverml.xyz/dev/
